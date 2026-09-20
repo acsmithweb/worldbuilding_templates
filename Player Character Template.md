@@ -1,144 +1,147 @@
-![[tauri_chase_4.png|256]]
-## Description
----
-**Race**: [Race]
-**Gender**: [Gender]
-**Appearance**: [Physical Description]
+```
+category: Player
+tags: [entity/player, system/runtime, character-sheet]
+security_clearance: Secret
+status: Active
+last_updated: 2026-06-06
+```
 
-| Species   | Class         | Alignment   | Experience Points   |
-| --------- | ------------- | ----------- | ------------------- |
-| [Species] | [Class Level] | [Alignment] | [Experience Points] |
-## Character Stats
----
+# {Character Name}
 
-|  | STR | DEX | CON | INT | WIS | CHA |
-| ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| Stat | [Str] ([str mod]) | [Dex] ([dex mod]) | [Con] ([con mod]) | [Int] ([int mod]) | [Wis] ([wis mod]) | [Cha] ([cha mod]) |
-| Save | [Str Save] | [Dex Save] | [Con Save] | [Int Save] | [Wis Save] | [Cha Save] |
-## Derived Stats
----
+## Overview
 
-| HP                    | Temp HP   | Prof. Bonus         | AC   | Initiative   | Speed   | Hit Dice            |
-| --------------------- | --------- | ------------------- | ---- | ------------ | ------- | ------------------- |
-| [current HP]/[Max HP] | [Temp HP] | [proficiency bonus] | [AC] | [initiative] | [Speed] | [hit dice]/max uses |
-### Skill Stats
+**Systemic Analysis:** This document acts as the primary "Runtime Environment" for a player-controlled entity. The DM Orchestrator uses this to gauge party power-scaling and narrative hooks. Visual assets should be linked via Portrait Image.
 
-| **Ability** | **Skill** | **Modifier** | **Ability** | **Skill** | **Modifier** |
-| ---- | ---- | ---- | ---- | ---- | ---- |
-| Strength (Str) | Athletics | +0 | Dexterity (Dex) | Acrobatics | +3 |
-|  |  |  |  | Sleight Of Hand | +5 |
-|  |  |  |  | Stealth | +7 |
-|  |  |  |  |  |  |
-| Intelligence (Int) | Arcana | +2 | Wisdom (Wis) | Animal Handling | +2 |
-|  | History | +2 |  | Insight | +4 |
-|  | Investigation | +4 |  | Nature | +2 |
-|  | Religion | +2 |  | Medicine | +4 |
-|  |  |  |  | Perception | +6 |
-|  |  |  |  | Survival | +2 |
-|  |  |  |  |  |  |
-| Charisma (Cha) | Deception | +3 |  |  |  |
-|  | Intimidation | +1 |  |  |  |
-|  | Performance | +1 |  |  |  |
-|  | Persuasion | +1 |  |  |  |
-## Attacks
----
+### Core Identity
 
-| Name | ATK Bonus | Damage | Type |
-| ---- | ---- | ---- | ---- |
-| [Weapon Name] | [Attack bonus] | [Damage Formula] | [Damage Type] |
-| [Weapon Name] | [Attack bonus] | [Damage Formula] | [Damage Type] |
-|  |  |  |  |
-## Equipment
----
+|Metric|Data|
+|:--|:--|
+|**Race**|[Race]|
+|**Gender**|[Gender]|
+|**Class/Level**|[Class Name] / [Level]|
+|**Alignment**|[Alignment]|
+|**Experience (XP)**|[Value]|
 
-|Copper|Silver|Electrum|Gold|Platinum|
-|---|---|---|---|---|
-|[CP] |[SP] |[EP] |[GP] |[PP] |
+## Character Statistics
 
-|**Category**|**Items**|
-|---|---|
-|Weapons| |
-|Armor| |
-|Consumables| |
-|Kits| |
-|Misc| |
-## Languages and Proficiencies
----
-**Languages**: 
-	Common, Elvish, Thieves Cant'
+**Systemic Analysis:** Mechanical data is structured for TF-IDF search efficiency for the NPC Engine when resolving competitive checks or combat interactions.
 
-**Proficiencies**
-    **Weapons**: [Weapon Proficiencies]
-    **Tools**: [Tool Proficiencies]
-    **Armor**: [Armor Proficiencies]
-## Features
----
-**Racial Features**
-- _[Feature Name]_: [Feature Description]  
+### Attributes and Saving Throws
 
-**Class Features**:
-- _[Feature Name]_: [Feature Description]  
-- _[Feature Name]_: [Feature Description]  
+|Attribute|Score|Modifier|Saving Throw|
+|:--|:--|:--|:--|
+|**STR**|[Value]|[Mod]|[Save]|
+|**DEX**|[Value]|[Mod]|[Save]|
+|**CON**|[Value]|[Mod]|[Save]|
+|**INT**|[Value]|[Mod]|[Save]|
+|**WIS**|[Value]|[Mod]|[Save]|
+|**CHA**|[Value]|[Mod]|[Save]|
 
-**Background Features**:
-- _[Feature Name]_: [Feature Description]  
+### Combat Metrics
 
-|Characteristics| |
-|---|---|
-|Personality Trait |[Personality Trait] |
-|Ideals|[Ideal]|
-|Bonds|[Bond]|
-|Flaws|[Flaw]|
+|HP (Max/Current)|Armor Class (AC)|Initiative|Speed|Hit Dice|
+|:--|:--|:--|:--|:--|
+|[Max]/[Current]|[Value] ([Type])|[Modifier]|[Value]|[Total] [Size]|
 
-## Spell Casting
----
+### Skill Proficiencies
 
-|Cast Skill|Spell Save DC|Spell Modifier|
-|---|---|---|
-|STAT|8 + PB + STAT_MOD ()|PB + STAT_MOD|
-#### Cantrips
-- _[Cantrip Name] ([Spell Save])_: [Brief Spell Description]
-#### Level 1
-- _[Spell Name] ([Spell Save])_: [Brief Spell Description]
-#### Level 2
-- _[Spell Name] ([Spell Save])_: [Brief Spell Description]
-#### Level 3
-- _[Spell Name] ([Spell Save])_: [Brief Spell Description]
-#### Level 4
-- _[Spell Name] ([Spell Save])_: [Brief Spell Description]
-#### Level 5
-- _[Spell Name] ([Spell Save])_: [Brief Spell Description]
-#### Level 6
-- _[Spell Name] ([Spell Save])_: [Brief Spell Description]
-#### Level 7
-- _[Spell Name] ([Spell Save])_: [Brief Spell Description]
-#### Level 8
-- _[Spell Name] ([Spell Save])_: [Brief Spell Description]
-#### Level 9
-- _[Spell Name] ([Spell Save])_: [Brief Spell Description]
-### Backstory
----
+|Skill|Ability|Modifier|
+|:--|:--|:--|
+|[Skill Name]|[Ability]|[Modifier]|
+|[Skill Name]|[Ability]|[Modifier]|
 
-#### Personality
----
+## Class Features and Abilities
 
-#### Quirks 
+**Systemic Analysis:** This section is designed to ingest class-specific data from your JSON bestiary and class files. Each entry should be formatted as an H3 to allow the RAG system to isolate individual mechanics.
 
-#### Mannerisms
+### {Ability Name 1}
 
-#### Pet Peeves
+**Source:** [[Class Name]] level [X] [Insert ability description here, e.g., "Second Wind: Use a bonus action to regain 1d10 + Fighter level HP".]
 
-#### Motivations and Goals
-- What drives the NPC?
-- Short-term and long-term goals.
-#### Relationships
-- Allies, enemies, family members.
-#### Secrets or Hidden Agendas
-- What they keep hidden.
-- Ulterior motives.
-#### Interactions
-[Notes on how the NPC interacts with players or other characters.]
-#### Plot Hooks
-[Ideas for quests or plot points related to this NPC.]
+### {Ability Name 2}
+
+**Source:** [[Class Name]] level [X] [Insert ability description here, e.g., "Sneak Attack: Deal extra 1d6 damage to a creature you hit with advantage".]
+
+## Spellcasting
+
+**Systemic Analysis:** For classes with `spellcastingAbility` defined in the JSON (e.g., WIS for Cleric, CHA for Warlock), use this block.
+
+|Spell DC|Attack Modifier|Casting Ability|
+|:--|:--|:--|
+|[DC Value]|[Bonus]|[Attribute]|
+
+### Prepared Spells / Cantrips
+
+- **Cantrips:** [Spell Name], [Spell Name]
+- **Level 1:** [Spell Name], [Spell Name]
+
+## Inventory and Economy
+
+**Systemic Analysis:** All itemized categories must be placed in Markdown tables to facilitate NPC Engine transaction processing.
+
+### Equipment
+
+|Item Name|Quantity|Weight|Value|
+|:--|:--|:--|:--|
+|[Weapon Name]|1|[lbs]|[gp]|
+|[Armor Name]|1|[lbs]|[gp]|
+
+### Wealth
+
+|CP|SP|EP|GP|PP|
+|:--|:--|:--|:--|:--|
+|[Value]|[Value]|[Value]|[Value]|[Value]|
+
+## Backstory and Narrative Friction
+
+### Psychological Profile
+
+- **Personality Traits:** [Overview]
+- **Motivations:** [Primary drivers]
+- **Plot Hooks:** [Ideas for character-specific quests]
+
+### Relations
+
+- **Allies:** [[NPC Name]] or [[Faction Name]]
+- **Enemies:** [[NPC Name]] or [[Faction Name]]
+
+**Security Gap:** Hidden agendas, secret parentage, or player-DM private pacts must be isolated in the Shadow State to prevent the NPC Engine from accidentally revealing these facts during "Public" interactions.
+
+## Chapter Impact Log
+
+**Systemic Analysis:** Tracks player-driven "Global State Changes" specific to this character's journey.
+
+|Chapter|Decision/Action|World State Change|
+|:--|:--|:--|
+|[Name]|[Player Choice]|[Local/Global Impact]|
 
 ---
+
+### JSON Shadow State
+
+```
+{
+  "mood_score": 0,
+  "knowledge_gate": [
+    "secret_agenda_fact",
+    "true_lineage"
+  ],
+  "goal_stack": [
+    "find_the_lost_artifact",
+    "avenge_the_fallen_mentor"
+  ],
+  "high_frequency_state": {
+    "current_hp": 0,
+    "temp_hp": 0,
+    "spell_slots_remaining": {
+      "level_1": 4,
+      "level_2": 2
+    },
+    "consumed_resources": [
+      "Second Wind",
+      "Action Surge"
+    ],
+    "active_conditions": []
+  }
+}
+```
